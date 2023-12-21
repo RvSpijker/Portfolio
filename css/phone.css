@@ -1,0 +1,126 @@
+@media only screen and (max-width: 950px) {
+    .headertext {
+        font-size: 64px;
+        line-height: 200px;
+    }
+
+    header {
+        height: 200px;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        gap: 8%
+    }
+
+    .card {
+        margin-top: 24px;
+        margin-bottom: 48px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 7px;
+        height: auto;
+        padding: 24px;
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .icon {
+        font-size: 75px;
+        color: var(--primary-button);
+        width: 100%;
+        text-align: center;
+    }
+
+    /* nav */
+
+    .nav-flex {
+        display: flex;
+        justify-content: left;
+        padding: 4px;
+        gap: 4px;
+        font-size: 10px;
+        margin-left: 10px;
+    }
+
+
+
+    .navlink {
+        width: auto;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        color: var(--text);
+    }
+
+    .navlink1 {
+        display: none;
+    }
+
+    .navlink2 {
+        display: block;
+        width: 100px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        color: var(--text);
+    }
+
+    .navlink:hover {
+        text-decoration: underline;
+    }
+
+    .navlink4 {
+        position: absolute;
+        width: 80px;
+        right: 10px;
+        background-color: var(--primary-button);
+        border-radius: 7px;
+        transition: box-shadow ease 0.2s;
+    }
+
+    .navlink4:hover {
+        box-shadow: 0 20px 80px -10px var(--primary-button);
+    }
+
+    /* Mijn Projecten */
+
+    .flex2 {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: auto;
+        gap: 2%;
+        margin-bottom: 48px;
+    }
+
+    .card2 {
+        background-color: var(--primary-button);
+        border-radius: 7px;
+        height: auto;
+        width: 100%;
+        margin-top: 24px;
+        margin-bottom: 48px;
+        padding: 24px;
+        color: inherit;
+        transition: box-shadow ease 0.2s;
+    }
+
+    .card2:hover {
+        box-shadow: 0 20px 80px -10px var(--primary-button);
+    }
+
+
+    .card2h1 {
+        text-align: center;
+        margin-top: 24px;
+        width: 100%;
+    }
+
+    .card2img {
+        width: 100%;
+    }
+}

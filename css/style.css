@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --text: #fcfbfe;
+    --background: #020104;
+    --primary-button: #8e43fe;
+    --secondary-button: #200024;
+    --accent: #eb43fe;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    overflow-x: hidden;
+}
+
+/* header */
+
+header {
+    height: 350px;
+    background-image: linear-gradient(var(--background), var(--background) , var(--primary-button)); ;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.headertext {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 100vw;
+    height: 100%;
+    line-height: 350px;
+    text-align: center;
+    font-size: 128px;
+    letter-spacing: -1px;
+    /* gradiant */
+    background-color: var(--accent);
+    background-image: linear-gradient(to right, var(--primary-button), var(--accent));
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+/* nav */
+
+.nav-flex {
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+    gap: 16px;
+}
+
+
+
+.navlink {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: var(--text);
+}
+
+.navlink1 {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: var(--text);
+}
+
+.navlink2 {
+    display: none;
+}
+
+.navlink:hover {
+    text-decoration: underline;
+}
+
+.navlink2:hover {
+    text-decoration: underline;
+}
+
+.navlink4 {
+    background-color: var(--primary-button);
+    border-radius: 7px;
+    transition: box-shadow ease 0.2s;
+}
+
+.navlink4:hover {
+    box-shadow: 0 20px 80px -10px var(--primary-button);
+}
+
+/* main */
+
+main {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.centertext {
+    margin: auto;
+    margin-top: 48px;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8%
+    
+}
+
+.card {
+    margin-top: 24px;
+    margin-bottom: 48px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 7px;
+    height: 350px;
+    padding: 24px;
+    width: 33%;
+}
+
+.icon {
+    font-size: 150px;
+    color: var(--primary-button);
+    width: 100%;
+    text-align: center;
+}
+
+.cardh1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.cardp {
+    width: 100%;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.href {
+    color: var(--text);
+    text-decoration: underline;
+}
+
+/* contact */
+
+.contactform {
+    background-color: var(--secondary-button);
+    border-radius: 7px;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    color: var(--text);
+    border: solid var(--primary-button);    
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.formtitle {
+    margin-bottom: 24px;
+}
+
+.contactinput {
+    color: var(--text);
+    background-color: var(--background);
+    padding: 8px;
+    border-radius: 7px;
+    border: solid var(--primary-button);
+    margin-bottom: 18px;
+}
+
+.message {
+    height: 200px;
+    resize: vertical;
+}
+
+.contactsubmit {
+    background-color: var(--primary-button);
+    border-radius: 7px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: var(--text);
+    border: none;
+    transition: box-shadow ease 0.2s;
+    margin: auto;
+}
+
+.contactsubmit:hover {
+    text-decoration: underline;
+    box-shadow: 0 20px 80px -10px var(--primary-button);
+}
+
+/* Mijn Projecten */
+
+.flex2 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+    gap: 8%;
+    margin-bottom: 48px;
+}
+
+.card2 {
+    background-color: var(--primary-button);
+    border-radius: 7px;
+    height: auto;
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 48px;
+    padding: 24px;
+    color: inherit;
+    transition: box-shadow ease 0.2s;
+}
+
+.card2:hover {
+    box-shadow: 0 20px 80px -10px var(--primary-button);
+}
+
+
+.card2h1 {
+    text-align: center;
+    margin-top: 24px;
+    width: 100%;
+}
+
+.card2img {
+    width: 100%;
+}
+
+/* titlebox */
+
+.titlebox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+.titlebox:hover {
+    cursor:pointer;
+}
+
+#uparrow {
+    display: none;
+    font-size: 24px;
+}
+
+#downarrow {
+    font-size: 24px;
+    display: none;
+}
+
+.centertext2 {    
+    text-align: center;
+}
+
+/* ______________ pop up _____________ */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+  /* Modal Content */
+    .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+
+  /* The Close Button */
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+  /* ------------------------------------------------------- */

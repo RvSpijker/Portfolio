@@ -37,8 +37,8 @@ a {
     height: 100%;
     line-height: 350px;
     text-align: center;
-    font-size: 128px;
-    letter-spacing: -1px;
+    font-size: 100px;
+    letter-spacing: -4px;
     /* gradiant */
     background-color: var(--accent);
     background-image: linear-gradient(to right, var(--primary-button), var(--accent));
@@ -101,8 +101,8 @@ a {
 /* main */
 
 main {
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .centertext {
@@ -160,11 +160,11 @@ main {
 .contactform {
     background-color: var(--secondary-button);
     border-radius: 7px;
-    width: 50%;
+    width: 80%;
     margin: auto;
     display: flex;
     flex-direction: column;
-    padding: 24px;
+    padding: 30px;
     color: var(--text);
     border: solid var(--primary-button);    
     margin-top: 48px;
@@ -205,6 +205,87 @@ main {
 .contactsubmit:hover {
     text-decoration: underline;
     box-shadow: 0 20px 80px -10px var(--primary-button);
+}
+
+.contactpagegrid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 50% 50%;
+    gap: 2%;
+}
+
+.contactinfo {
+    position: relative;
+    background-color: var(--secondary-button);
+    border-radius: 7px;
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    color: var(--text);
+    border: solid var(--primary-button);
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.icons {
+    color: var(--primary-button);
+    font-size: 50px;
+    width: 60px;
+}
+
+.iconsdiv {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+    line-height: 50px;
+}
+
+.sociallink {
+    text-decoration: none;
+    color: var(--text);
+    width: 80px;
+    height: 100%;
+}
+
+.textlink {
+    color: var(--text);
+}
+
+.textlink:hover {
+    text-decoration: underline;
+}
+
+.socialbutton {
+    float: left;
+    border-radius: 50%;
+    background-color: var(--background);
+    width: 80px;
+    height: 80px;
+    transition: box-shadow ease 0.2s;
+}
+
+.socialbutton:hover {
+    box-shadow: 0 20px 80px -10px var(--primary-button);  
+}
+
+.socialicon {
+    font-size: 50px;
+    color: var(--primary-button);
+    text-align: center;
+    width: 100%;
+    position: relative;
+    top: 15px;
+}
+
+.socialdiv {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+    justify-content: center;
+    gap: 24px;
 }
 
 /* Mijn Projecten */

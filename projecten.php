@@ -11,7 +11,7 @@
     
     $dbconnect = new dbconnection();
 
-    if ($var_value == 'up') {
+    if (isset($var_value) == 'up') {
         $sql = "SELECT * FROM projecten ORDER BY id ASC";
     } else {
         $sql = "SELECT * FROM projecten ORDER BY id DESC";

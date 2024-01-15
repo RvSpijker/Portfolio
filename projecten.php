@@ -10,8 +10,12 @@
     }
     
     $dbconnect = new dbconnection();
+    
+    if (!isset($var_value)) {
+        $var_value = 'down';
+    }
 
-    if (isset($var_value) == 'up') {
+    if ($var_value == 'up') {
         $sql = "SELECT * FROM projecten ORDER BY id ASC";
     } else {
         $sql = "SELECT * FROM projecten ORDER BY id DESC";
@@ -29,7 +33,7 @@
         </div>
         <div class="flex2">
         <?php foreach($recset as $key => $value) { ?>
-            <a href="<?= $recset[$key]['project_link'] ?>" class="card2">
+            <a href="project.php?id=<?= $recset[$key]['id'] ?>" class="card2">
                 <img class="card2img" src="img/<?= $recset[$key]['project_img'] ?>" alt="blog">
                 <h2 class="card2h1"><?= $recset[$key]['project_name'] ?></h2>
             </a>
